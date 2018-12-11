@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
 	CheckBox cb1,cb2,cb3,cb4;
-	StringBuffer sb=new StringBuffer();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +24,7 @@ public class MainActivity extends ActionBarActivity {
 
 
     public  void check(View v) {
+    	StringBuffer sb=new StringBuffer();
 		if (cb1.isChecked()) {
 			sb.append(cb1.getText());
 		}
